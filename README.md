@@ -359,5 +359,76 @@ Funcionalidade: Transferência de Valores Entre Correntistas - Sem Conexão
 
 ***
 
+
 # Questão 3
 
+Para iniciar o modo visual de execução do Cypress (Cypress Test Runner com interface gráfica), execute o seguinte comando no terminal, a partir da raiz do seu projeto: `npx cypress open`
+
+Esse comando:
+
+* Abre a interface interativa do Cypress.
+
+* Permite selecionar e executar arquivos de teste (.spec.js).
+
+* Exibe os testes em tempo real, com inspeção de cada etapa.
+
+* Mostra logs de requisições, respostas, assertions, erros, etc.
+
+✅ Pré-requisitos:
+
+O Cypress deve estar instalado (npm install cypress --save-dev).
+
+O projeto precisa ter a estrutura padrão (por exemplo: cypress/e2e/...).
+
+🔄 Alternativas:
+
+Se quiser rodar os testes em modo headless (sem interface visual), você pode usar: `npx cypress run`
+
+
+***
+### Estratégia de testes
+
+A estratégia utilizada para automatizar os testes da API do Trello com Cypress seguiu uma abordagem modular, reutilizável e orientada a entidades. Abaixo está a descrição completa da estratégia adotada:
+
+🎯 Objetivo da Estratégia
+
+Automatizar de forma robusta e sustentável as operações da API do Trello (boards e cards), garantindo que cada recurso possa ser testado isoladamente ou em conjunto com outros recursos.
+
+🔁 1. Reutilização com Cypress Commands
+
+Ao encapsular as chamadas da API em Cypress.Commands.add, conseguimos:
+
+* Reduzir duplicidade de código entre testes.
+
+* Manter a lógica de request isolada da lógica de asserção.
+
+* Permitir testes mais limpos e expressivos.
+Exemplo:
+
+🔐 2. Segurança e flexibilidade com variáveis de ambiente
+
+A estratégia usa variáveis de ambiente (Cypress.env) para armazenar trelloApiKey e trelloApiToken, evitando:
+
+* Exposição de segredos no código.
+
+* Risco de commit acidental de dados sensíveis.
+
+* Dificuldade de configuração em múltiplos ambientes.
+
+⚙️ 3. Automação do ciclo de vida dos recursos
+
+Cada teste:
+
+* Cria dinamicamente os dados necessários (board, lista, etc.)
+
+* Executa o teste com base nesses dados
+
+* Realiza limpeza (delete) ao final
+
+Isso garante que:
+
+* Os testes sejam independentes entre si
+
+* Não dependam de dados fixos ou estados anteriores
+
+* Evitem dados órfãos ou poluição no ambiente do Trello
