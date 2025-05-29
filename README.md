@@ -5,8 +5,8 @@ Projeto de automação de API utilizando cypress
 
 ## Table of Contents
  1. [Questão 1](#Questão-1)
- 2. 
- 3. [Subheading 3](#sub-heading-3)
+ 2. [Questão 2](#Questão-2)
+ 3. 
 
 # Questão 1 
 ## Critérios de Aceitação:
@@ -346,4 +346,6 @@ Funcionalidade: Transferência de Valores Entre Correntistas - Sem Conexão
 
 ***
 
- ## aaa adsada a d
+ # Questão 2
+
+ A resposta da questão 2, está no arquifo `script_banco_escola.sql`
