@@ -366,7 +366,7 @@ Funcionalidade: Transferência de Valores Entre Correntistas - Sem Conexão
 
 * Acesse a aba "Actions" no repositório.
 
-* Selecione o workflow chamado "Cypress Manual Tests".
+* Selecione o workflow chamado "pipeline-trigger-manual".
 
 * Clique em "Run workflow".
 
