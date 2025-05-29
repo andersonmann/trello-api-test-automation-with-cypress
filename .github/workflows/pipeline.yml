@@ -1,4 +1,4 @@
-name: pipeline-cypress-manual
+name: pipeline-trigger-manual
 
 on:
   workflow_dispatch:  # Permite execução manual via GitHub UI
