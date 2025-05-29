@@ -348,4 +348,12 @@ Funcionalidade: Transferência de Valores Entre Correntistas - Sem Conexão
 
  # Questão 2
 
- A resposta da questão 2, está no arquifo `script_banco_escola.sql`
+ A resposta da questão 2, está no arquivo `script_banco_escola.sql`
+
+ ✅ Como usar:
+
+* Execute o script de criação de tabelas primeiro.
+
+* Em seguida, execute este script de inserção de dados.
+
+* Agora, você pode testar as consultas SQL.
