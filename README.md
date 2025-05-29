@@ -6,7 +6,7 @@ Projeto de automação de API utilizando cypress
 ## Table of Contents
  1. [Questão 1](#Questão-1)
  2. [Questão 2](#Questão-2)
- 3. 
+ 3. [Questão 3](#Questão-3)
 
 # Questão 1 
 ## Critérios de Aceitação:
@@ -346,8 +346,7 @@ Funcionalidade: Transferência de Valores Entre Correntistas - Sem Conexão
 
 ***
 
- # Questão 2
-
+ # Questão 2 
  A resposta da questão 2, está no arquivo `script_banco_escola.sql`
 
  ✅ Como usar:
@@ -357,3 +356,8 @@ Funcionalidade: Transferência de Valores Entre Correntistas - Sem Conexão
 * Em seguida, execute este script de inserção de dados.
 
 * Agora, você pode testar as consultas SQL.
+
+***
+
+# Questão 3
+
