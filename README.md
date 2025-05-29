@@ -362,6 +362,21 @@ Funcionalidade: Transferência de Valores Entre Correntistas - Sem Conexão
 
 # Questão 3
 
+### Execução via GitHub Actions
+
+* Acesse a aba "Actions" no repositório.
+
+* Selecione o workflow chamado "Cypress Manual Tests".
+
+* Clique em "Run workflow".
+
+* Os testes serão executados em um ambiente Ubuntu e os resultados exibidos diretamente na interface.
+
+### Execucão local 
+✅ Pré-requisitos:
+
+* baixar o projeto na sua máquina 
+
 Para iniciar o modo visual de execução do Cypress (Cypress Test Runner com interface gráfica), execute o seguinte comando no terminal, a partir da raiz do seu projeto: `npx cypress open`
 
 Esse comando:
